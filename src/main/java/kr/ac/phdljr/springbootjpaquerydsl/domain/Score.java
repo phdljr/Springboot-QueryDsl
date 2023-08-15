@@ -14,7 +14,7 @@ public class Score {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long scoreId;
     private String subject;
-    private Long score;
+    private Integer score;
 
     @ManyToOne
     private Student student;
