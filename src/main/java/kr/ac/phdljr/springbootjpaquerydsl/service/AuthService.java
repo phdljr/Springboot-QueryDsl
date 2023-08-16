@@ -1,7 +1,8 @@
 package kr.ac.phdljr.springbootjpaquerydsl.service;
 
-import kr.ac.phdljr.springbootjpaquerydsl.domain.User;
+import kr.ac.phdljr.springbootjpaquerydsl.dto.AuthResponse;
+import kr.ac.phdljr.springbootjpaquerydsl.dto.LoginRequestDto;
 
 public interface AuthService {
-    User authenticate(User user);
+    AuthResponse authenticate(LoginRequestDto loginRequestDto);
 }

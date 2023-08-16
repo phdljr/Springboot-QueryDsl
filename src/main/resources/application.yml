@@ -10,6 +10,15 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+    hibernate:
+      ddl-auto: update
 jasypt:
   encryptor:
     bean: stringEncryptor
+application:
+  security:
+    jwt:
+      secret-key: 45645636454645967asd89as7dqwdqwd788w9f7as4g789as7f49awf7asdfuasdigfniouadsfghweoiaufhsadifhsdiouahfmdsaioufgbadisouyfgsadyfiungsdaew/8f7ae/wf
+      expiration: 60000
+      refresh-token:
+        expiration: 604800000
