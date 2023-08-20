@@ -12,6 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
