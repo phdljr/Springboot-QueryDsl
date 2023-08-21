@@ -6,7 +6,7 @@ import kr.ac.phdljr.springbootjpaquerydsl.dto.StudentResponseDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-08-20T17:46:12+0900",
+    date = "2023-08-21T21:45:54+0900",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.4.1 (Oracle Corporation)"
 )
 public class StudentMapperImpl implements StudentMapper {

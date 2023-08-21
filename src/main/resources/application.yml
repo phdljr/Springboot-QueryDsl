@@ -12,6 +12,17 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: update
+
+  cache:
+    redis:
+      time-to-live: 10
+      cache-null-values: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
 jasypt:
   encryptor:
     bean: stringEncryptor

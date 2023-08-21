@@ -32,6 +32,7 @@ public class SecurityConfig {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorizeRequest -> authorizeRequest
                         .requestMatchers(mvcMatcherBuilder.pattern("/auth/**")).permitAll()
+                        .requestMatchers(mvcMatcherBuilder.pattern("/test/**")).permitAll()
                         .anyRequest().authenticated())
                 .authenticationProvider(authenticationProvider)
                 .addFilterBefore(jwtAuthFiler, UsernamePasswordAuthenticationFilter.class);
